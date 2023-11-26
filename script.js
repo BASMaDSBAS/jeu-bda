@@ -1,5 +1,6 @@
 // Données du jeu
-const gameData = [
+// Données du jeu
+const allGameData = [
     { word: 'un', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/1.JPG' },
     { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/2.JPG' },
     { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/3.JPG' },
@@ -10,12 +11,37 @@ const gameData = [
     { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/8.JPG' },
     { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/9.JPG' },
     { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/10.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/11.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/11.jpg' }, 
     // Ajoutez d'autres données selon vos besoins
 ];
 
+let gameData = []; // Utilisé pour stocker les données de la manche en cours
 let currentRound = 0;
 let score = 0;
+
+// Fonction pour commencer une nouvelle manche
+function startRound() {
+    if (currentRound < 10) {
+        // Sélectionner 10 éléments de manière aléatoire
+        gameData = getRandomItems(allGameData, 10);
+        
+        const currentQuestion = gameData[currentRound];
+        displayQuestion(currentQuestion);
+    } else {
+        // Fin du jeu
+        endGame();
+    }
+}
+
+// Fonction pour obtenir des éléments aléatoires d'un tableau
+function getRandomItems(array, count) {
+    const shuffledArray = array.slice(); // Copier le tableau pour ne pas le modifier directement
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray.slice(0, count);
+}
 
 // Fonction pour vérifier la réponse
 function checkAnswer() {
