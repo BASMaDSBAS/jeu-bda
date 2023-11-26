@@ -1,16 +1,16 @@
 // Données du jeu
 const gameData = [
-    { word: 'un', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/1.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/2.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/3.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/4.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/5.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/6.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/7.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/8.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/9.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/10.JPG' },
-    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu/main/photo/11.JPG' },
+    { word: 'un', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/1.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/2.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/3.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/4.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/5.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/6.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/7.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/8.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/9.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/10.JPG' },
+    { word: 'deux', image: 'https://raw.githubusercontent.com/BASMaDSBAS/jeu-bda/main/11.JPG' },
     // Ajoutez d'autres données selon vos besoins
 ];
 
