@@ -83,6 +83,6 @@ function nextRound() {
 
 // Fonction pour terminer le jeu
 function endGame() {
-    alert(`Fin du jeu ! Votre score est de ${score} sur 10.`);
+    alert(`Fin du jeu ! Votre score  de ${score} sur 10.`);
     // Vous pouvez ajouter d'autres actions ici, comme réinitialiser le jeu.
 }
